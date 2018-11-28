@@ -1,7 +1,13 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-12">
-        <app-produto></app-produto>
+    <div class="produto-vitrine" *ngFor="let produto of produtos">
+        <div class="align-content-center"> 
+          <img src="https://cdn.awsli.com.br/300x300/731/731531/produto/31882009/79e55961c1.jpg" />
+        </div>
+        <h5 class="text-vitrine text-center"><strong> {{produto.descricao}} </strong></h5>
+        <div> Preço Vermelho e Soblinhado quando tem preço por </div>
+        <div> Preço por </div>
+        <button class="btn btn-dark col-sm-12" >Investir</button>
     </div>
   </div>
 </div>

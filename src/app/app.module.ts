@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
@@ -20,7 +20,7 @@ import { VitrineModule } from './vitrine/vitrine.module';
     BrowserModule,
     BsDropdownModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     ModalModule,
     TooltipModule,
     VitrineModule
